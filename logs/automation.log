@@ -1,0 +1,64 @@
+[INFO ] 19-11-2020 09:40:44.867 TC_LoginTest_001 - Driver invoked
+[INFO ] 19-11-2020 09:40:44.973 TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
+[INFO ] 19-11-2020 09:40:45.817 TC_LoginTest_001 - Driver invoked
+[INFO ] 19-11-2020 09:40:45.833 TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
+[INFO ] 19-11-2020 09:40:48.902 TC_LoginTest_001 - Driver invoked
+[INFO ] 19-11-2020 09:40:48.912 TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
+[INFO ] 19-11-2020 09:40:53.582 TC_LoginTest_001 - ******* Providing login details ***** 
+[INFO ] 19-11-2020 09:40:54.551 TC_LoginTest_001 - ******* Providing login details ***** 
+[INFO ] 19-11-2020 09:40:54.725 TC_LoginTest_001 - ******* Providing login details ***** 
+[INFO ] 19-11-2020 09:40:59.349 TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
+[INFO ] 19-11-2020 09:41:04.335 TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
+[INFO ] 19-11-2020 09:41:05.740 TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
+[INFO ] 19-11-2020 10:21:13.190 TC_LoginTest_001 - Driver invoked
+[INFO ] 19-11-2020 10:21:13.246 TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
+[INFO ] 19-11-2020 10:21:20.584 TC_LoginTest_001 - ******* Providing login details ***** 
+[INFO ] 19-11-2020 10:21:27.988 TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
+[INFO ] 19-11-2020 10:22:39.862 TC_LoginTest_001 - Driver invoked
+[INFO ] 19-11-2020 10:22:39.852 TC_LoginTest_001 - Driver invoked
+[INFO ] 19-11-2020 10:22:39.932 TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
+[INFO ] 19-11-2020 10:22:39.932 TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
+[INFO ] 19-11-2020 10:22:41.761 TC_LoginTest_001 - Driver invoked
+[INFO ] 19-11-2020 10:22:41.769 TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
+[INFO ] 19-11-2020 10:22:44.772 TC_LoginTest_001 - ******* Providing login details ***** 
+[INFO ] 19-11-2020 10:22:45.445 TC_LoginTest_001 - ******* Providing login details ***** 
+[INFO ] 19-11-2020 10:22:46.181 TC_LoginTest_001 - ******* Providing login details ***** 
+[INFO ] 19-11-2020 10:22:52.690 TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
+[INFO ] 19-11-2020 10:22:53.193 TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
+[INFO ] 19-11-2020 10:22:56.062 TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
+22:29:01.621 [TestNG-tests-2] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
+22:29:01.641 [TestNG-tests-3] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
+22:29:01.710 [TestNG-tests-2] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
+22:29:01.710 [TestNG-tests-3] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
+22:29:03.367 [TestNG-tests-1] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
+22:29:03.382 [TestNG-tests-1] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
+22:29:06.573 [TestNG-tests-2] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
+22:29:07.419 [TestNG-tests-1] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
+22:29:07.435 [TestNG-tests-3] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
+22:29:15.298 [TestNG-tests-2] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
+22:29:15.682 [TestNG-tests-3] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
+22:29:16.751 [TestNG-tests-1] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
+22:33:21.292 [TestNG-tests-2] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
+22:33:21.353 [TestNG-tests-2] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
+22:33:21.887 [TestNG-tests-3] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
+22:33:21.892 [TestNG-tests-3] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
+22:33:22.378 [TestNG-tests-1] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
+22:33:22.383 [TestNG-tests-1] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
+22:33:24.612 [TestNG-tests-2] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
+22:33:26.197 [TestNG-tests-3] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
+22:33:27.068 [TestNG-tests-1] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
+22:33:31.403 [TestNG-tests-2] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
+22:33:33.607 [TestNG-tests-3] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
+22:33:34.363 [TestNG-tests-1] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
+22:47:24.842 [TestNG-tests-2] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
+22:47:24.909 [TestNG-tests-2] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
+22:47:25.919 [TestNG-tests-3] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
+22:47:25.919 [TestNG-tests-3] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
+22:47:27.946 [TestNG-tests-1] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
+22:47:27.946 [TestNG-tests-1] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
+22:47:33.978 [TestNG-tests-1] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
+22:47:33.981 [TestNG-tests-2] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
+22:47:34.884 [TestNG-tests-3] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
+22:47:40.854 [TestNG-tests-1] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
+22:47:43.646 [TestNG-tests-2] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
+22:47:44.517 [TestNG-tests-3] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 

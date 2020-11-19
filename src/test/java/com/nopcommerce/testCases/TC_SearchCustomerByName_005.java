@@ -17,20 +17,20 @@ public class TC_SearchCustomerByName_005 extends BaseClass {
 	{
 		logger.info("********* starting TC_SearchCustomerByName_005 *************");
 		
-		driver.get(configPropObj.getProperty("baseURL"));
-		LoginPage lp=new LoginPage(driver);
+		getDriver().get(configPropObj.getProperty("baseURL"));
+		LoginPage lp=new LoginPage(getDriver());
 		lp.setUserName(configPropObj.getProperty("useremail"));
 		lp.setPassword(configPropObj.getProperty("password"));
 		lp.clickLogin();
 		
 		//Go to search page
-		AddcustomerPage addcust=new AddcustomerPage(driver);
+		AddcustomerPage addcust=new AddcustomerPage(getDriver());
 		
 		addcust.clickOnCustomersMenu();
 		addcust.clickOnCustomersMenuItem();
 		
 		//Name
-		SearchCustomerPage searchcust=new SearchCustomerPage(driver);
+		SearchCustomerPage searchcust=new SearchCustomerPage(getDriver());
 		searchcust.setFirstName("Victoria");
 		searchcust.setLastName("Terces");
 		searchcust.clickSearch();
@@ -45,7 +45,7 @@ public class TC_SearchCustomerByName_005 extends BaseClass {
 		else
 		{
 			logger.error("********* Search customer by name is failed*************");
-			captureScreen(driver,"searchCustomerbyName");
+			//captureScreen(getDriver(),"searchCustomerbyName");
 			Assert.assertTrue(false);
 		}
 		logger.info("********* End of TC_SearchCustomerByName_005 *************");

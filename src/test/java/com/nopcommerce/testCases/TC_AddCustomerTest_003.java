@@ -17,8 +17,8 @@ public class TC_AddCustomerTest_003 extends BaseClass{
 	{
 		logger.info("********* starting TC_AddCustomerTest_003 *************");
 		
-		driver.get(configPropObj.getProperty("baseURL"));
-		LoginPage lp=new LoginPage(driver);
+		getDriver().get(configPropObj.getProperty("baseURL"));
+		LoginPage lp=new LoginPage(getDriver());
 		lp.setUserName(configPropObj.getProperty("useremail"));
 		lp.setPassword(configPropObj.getProperty("password"));
 		lp.clickLogin();
@@ -26,7 +26,7 @@ public class TC_AddCustomerTest_003 extends BaseClass{
 		
 		logger.info("*********Adding new customer *************");
 		
-		AddcustomerPage addcust=new AddcustomerPage(driver);
+		AddcustomerPage addcust=new AddcustomerPage(getDriver());
 		
 		addcust.clickOnCustomersMenu();
 		addcust.clickOnCustomersMenuItem();
@@ -58,7 +58,7 @@ public class TC_AddCustomerTest_003 extends BaseClass{
 
 				} else {
 					logger.error("*************** Customer Not added succesfully *********** ");
-					captureScreen(driver,"addNewCustomer");
+					//captureScreen(getDriver(),"addNewCustomer");
 					Assert.assertTrue(false);
 				}
 				logger.info("***************   TC_AddCustomerTest_003 Finished  *********** ");

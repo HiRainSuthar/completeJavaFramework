@@ -8,53 +8,47 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
-	WebDriver driver;
-	
-	public LoginPage(WebDriver driver)
-	{
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
-	}
-	
-	@FindBy(id="Email")
-	@CacheLookup
-	WebElement txtEmail;
-	
-	@FindBy(id="Password")
-	@CacheLookup
-	WebElement txtPassword;
-	
-	
-	@FindBy(xpath="//input[@value='Log in']")
-	@CacheLookup
-	WebElement btnLogin;
-	
-	@FindBy(xpath="//a[contains(normalize-space(),'Logout')]")
-	@CacheLookup
-	WebElement lnkLogout;
-	
-	
-	
-	public void setUserName(String uname)
-	{
-		txtEmail.clear();
-		txtEmail.sendKeys(uname);
-	}
-	
-	public void setPassword(String pwd) 
-	{
-		txtPassword.clear();
-		txtPassword.sendKeys(pwd);
-	}
-	
-	public void clickLogin() {
+    WebDriver driver;
 
-		btnLogin.click();
-	}
-	
-	public void clickLogout() {
+    public LoginPage(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+    }
 
-		lnkLogout.click();
-	}
-	
+    @FindBy(id = "Email")
+    @CacheLookup
+    WebElement txtEmail;
+
+    @FindBy(id = "Password")
+    @CacheLookup
+    WebElement txtPassword;
+
+
+    @FindBy(xpath = "//input[@value='Log in']")
+    @CacheLookup
+    WebElement btnLogin;
+
+    @FindBy(xpath = "//a[contains(normalize-space(),'Logout')]")
+    @CacheLookup
+    WebElement lnkLogout;
+
+
+    public void setUserName(String uname) {
+        txtEmail.clear();
+        txtEmail.sendKeys(uname);
+    }
+
+    public void setPassword(String pwd) {
+        txtPassword.clear();
+        txtPassword.sendKeys(pwd);
+    }
+
+    public void clickLogin() {
+        btnLogin.click();
+    }
+
+    public void clickLogout() {
+        lnkLogout.click();
+    }
+
 }

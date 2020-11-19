@@ -12,25 +12,26 @@ import com.nopcommerce.testBase.BaseClass;
 
 public class TC_SearchCustomerByEmail_004 extends BaseClass {
 
+
 	@Test(groups={"regression","master"})
 	public void searchCustomerbyEmail() throws InterruptedException, IOException
 	{
 		logger.info("********* starting TC_SearchCustomerByEmail_004 *************");
 		
-		driver.get(configPropObj.getProperty("baseURL"));
-		LoginPage lp=new LoginPage(driver);
+		getDriver().get(configPropObj.getProperty("baseURL"));
+		LoginPage lp=new LoginPage(getDriver());
 		lp.setUserName(configPropObj.getProperty("useremail"));
 		lp.setPassword(configPropObj.getProperty("password"));
 		lp.clickLogin();
 		
 		//Go to search page
-		AddcustomerPage addcust=new AddcustomerPage(driver);
+		AddcustomerPage addcust=new AddcustomerPage(getDriver());
 		
 		addcust.clickOnCustomersMenu();
 		addcust.clickOnCustomersMenuItem();
 		
 		//Email ID
-		SearchCustomerPage searchcust=new SearchCustomerPage(driver);
+		SearchCustomerPage searchcust=new SearchCustomerPage(getDriver());
 		searchcust.setEmail("victoria_victoria@nopCommerce.com");
 		searchcust.clickSearch();
 		Thread.sleep(3000);
@@ -44,7 +45,7 @@ public class TC_SearchCustomerByEmail_004 extends BaseClass {
 		else
 		{
 			logger.error("********* Search customer by email is failed*************");
-			captureScreen(driver,"searchCustomerbyEmail");
+			//captureScreen(getDriver(),"searchCustomerbyEmail");
 			Assert.assertTrue(false);
 		}
 		logger.info("********* End of TC_SearchCustomerByEmail_004 *************");
