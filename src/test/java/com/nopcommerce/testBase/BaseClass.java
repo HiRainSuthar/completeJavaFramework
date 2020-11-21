@@ -16,6 +16,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -30,6 +31,9 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
 
+    public static final String USERNAME = "YOUR_USERNAME";
+    public static final String AUTOMATE_KEY = "YOUR_ACCESS_KEY";
+    public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
     public ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     public Properties configPropObj;
     public Logger logger = LogManager.getLogger(this.getClass());
@@ -62,12 +66,48 @@ public class BaseClass {
         } else if (browser.contains("remote")) {
             if (browser.contains("chrome")) {
                 driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), optionsManager.getChromeOptions()));
-            }
-            else if (browser.contains("firefox")) {
+            } else if (browser.contains("firefox")) {
                 driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), optionsManager.getFirefoxOptions()));
-            }
-            else if (browser.contains("edge")) {
+            } else if (browser.contains("edge")) {
                 driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), optionsManager.getEdgeOptions()));
+            }
+        } else if (browser.contains("browserstack")) {
+            if (browser.contains("chrome")) {
+                DesiredCapabilities caps = new DesiredCapabilities();
+                caps.setCapability(ChromeOptions.CAPABILITY, optionsManager.getChromeOptions());
+                caps.setCapability("os", "Windows");
+                caps.setCapability("os_version", "10");
+                caps.setCapability("browser", "Chrome");
+                caps.setCapability("browser_version", "80");
+                caps.setCapability("name", "My First Test");
+                caps.setCapability("build", "Build #1");
+                caps.setCapability("project", "Sample sandbox project");
+
+                driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), caps));
+            } else if (browser.contains("firefox")) {
+                DesiredCapabilities caps = new DesiredCapabilities();
+                caps.setCapability(ChromeOptions.CAPABILITY, optionsManager.getFirefoxOptions());
+                caps.setCapability("os", "Windows");
+                caps.setCapability("os_version", "10");
+                caps.setCapability("browser", "Firefox");
+                caps.setCapability("browser_version", "80");
+                caps.setCapability("name", "My First Test");
+                caps.setCapability("build", "Build #1");
+                caps.setCapability("project", "Sample sandbox project");
+
+                driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), caps));
+            } else if (browser.contains("edge")) {
+                DesiredCapabilities caps = new DesiredCapabilities();
+                caps.setCapability(ChromeOptions.CAPABILITY, optionsManager.getEdgeOptions());
+                caps.setCapability("os", "Windows");
+                caps.setCapability("os_version", "10");
+                caps.setCapability("browser", "Edge");
+                caps.setCapability("browser_version", "80");
+                caps.setCapability("name", "My First Test");
+                caps.setCapability("build", "Build #1");
+                caps.setCapability("project", "Sample sandbox project");
+
+                driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), caps));
             }
         }
         getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
