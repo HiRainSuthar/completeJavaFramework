@@ -11,10 +11,8 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 public class SearchCustomerPage {
-    public WebDriver driver;
 
     public SearchCustomerPage(WebDriver driver) {
-        this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
@@ -79,10 +77,10 @@ public class SearchCustomerPage {
 
     public boolean searchCustomerByEmail(String email) {
         boolean flag = false;
+
         for (int i = 1; i <= getNoOfRows(); i++) {
             String emailid = table.findElement(By.xpath("//table[@id='customers-grid']/tbody/tr[" + i + "]/td[2]"))
                     .getText();
-
             System.out.println(emailid);
             if (emailid.equals(email)) {
                 flag = true;
