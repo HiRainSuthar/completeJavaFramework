@@ -13,8 +13,7 @@ import com.nopcommerce.testBase.BaseClass;
 public class TC_AddCustomerTest_003 extends BaseClass{
 
 	@Test(groups={"sanity","regression","master"})
-	public void addNewCustomer() throws InterruptedException, IOException
-	{
+	public void addNewCustomer() throws InterruptedException {
 		logger.info("********* starting TC_AddCustomerTest_003 *************");
 		
 		getDriver().get(configPropObj.getProperty("baseURL"));
