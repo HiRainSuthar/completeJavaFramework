@@ -2,6 +2,7 @@ package com.nopcommerce.testCases;
 
 import java.io.IOException;
 
+import com.nopcommerce.utilities.PropertyReader;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,15 +13,20 @@ import com.nopcommerce.testBase.BaseClass;
 
 public class TC_SearchCustomerByName_005 extends BaseClass {
 
+	PropertyReader propertyReader;
+	public TC_SearchCustomerByName_005(){
+		propertyReader = new PropertyReader();
+	}
+
 	@Test(groups={"master"})
 	public void searchCustomerbyName() throws InterruptedException, IOException
 	{
 		logger.info("********* starting TC_SearchCustomerByName_005 *************");
 		
-		getDriver().get(configPropObj.getProperty("baseURL"));
+		getDriver().get(propertyReader.getPropertyValue("baseURL"));
 		LoginPage lp=new LoginPage(getDriver());
-		lp.setUserName(configPropObj.getProperty("useremail"));
-		lp.setPassword(configPropObj.getProperty("password"));
+		lp.setUserName(propertyReader.getPropertyValue("useremail"));
+		lp.setPassword(propertyReader.getPropertyValue("password"));
 		lp.clickLogin();
 		
 		//Go to search page

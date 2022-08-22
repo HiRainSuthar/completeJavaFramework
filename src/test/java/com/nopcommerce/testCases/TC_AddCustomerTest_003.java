@@ -2,8 +2,10 @@ package com.nopcommerce.testCases;
 
 import java.io.IOException;
 
+import com.nopcommerce.utilities.PropertyReader;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.nopcommerce.pageObjects.AddcustomerPage;
@@ -12,14 +14,21 @@ import com.nopcommerce.testBase.BaseClass;
 
 public class TC_AddCustomerTest_003 extends BaseClass{
 
+	PropertyReader propertyReader;
+
+	@BeforeClass
+	public void constructObj(){
+		propertyReader = new PropertyReader();
+	}
+
 	@Test(groups={"sanity","regression","master"})
 	public void addNewCustomer() throws InterruptedException {
 		logger.info("********* starting TC_AddCustomerTest_003 *************");
 		
-		getDriver().get(configPropObj.getProperty("baseURL"));
+		getDriver().get(propertyReader.getPropertyValue("baseURL"));
 		LoginPage lp=new LoginPage(getDriver());
-		lp.setUserName(configPropObj.getProperty("useremail"));
-		lp.setPassword(configPropObj.getProperty("password"));
+		lp.setUserName(propertyReader.getPropertyValue("useremail"));
+		lp.setPassword(propertyReader.getPropertyValue("password"));
 		lp.clickLogin();
 		Thread.sleep(3000);
 		

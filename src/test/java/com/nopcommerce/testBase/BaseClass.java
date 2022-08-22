@@ -1,5 +1,6 @@
 package com.nopcommerce.testBase;
 
+import com.nopcommerce.utilities.PropertyReader;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
@@ -8,10 +9,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -26,13 +24,15 @@ public class BaseClass {
     public static final String AUTOMATE_KEY = "YOUR_ACCESS_KEY";
     public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
     public ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-    public Properties configPropObj;
-    public Logger logger = LogManager.getLogger(this.getClass());
-    BrowserOptionsManager browserOptionsManager = new BrowserOptionsManager();
-    CloudDesiredCapabilities cloudDesiredCapabilities = new CloudDesiredCapabilities();
+
+    protected Logger logger = LogManager.getLogger(this.getClass());
+
+    BrowserOptionsManager browserOptionsManager;
+    CloudDesiredCapabilities cloudDesiredCapabilities;
     String remoteURL = "http://localhost:4444/wd/hub";
     BrowserFactory browserFactory;
     String runmode;
+    PropertyReader propertyReader;
 
     public WebDriver getDriver() {
         //Get driver from ThreadLocalMap
@@ -41,18 +41,18 @@ public class BaseClass {
 
     @BeforeTest
     public void constructObject(){
+        browserOptionsManager = new BrowserOptionsManager();
         browserFactory = new BrowserFactory();
+        cloudDesiredCapabilities = new CloudDesiredCapabilities();
+        propertyReader = new PropertyReader();
     }
 
     @BeforeClass(alwaysRun = true)// Add alwaysRun=true
     @Parameters("browser")
     public void setup(String browser) throws IOException {
         //Load config.properties file
-        configPropObj = new Properties();
-        FileInputStream configfile = new FileInputStream(System.getProperty("user.dir") + "/resources/config.properties");
-        configPropObj.load(configfile);
 
-        runmode = configPropObj.getProperty("runmode");
+        runmode = propertyReader.getPropertyValue("runmode");
         //end of loading config.properties file
         if (runmode.equalsIgnoreCase("local")) {
             switch (browser) {

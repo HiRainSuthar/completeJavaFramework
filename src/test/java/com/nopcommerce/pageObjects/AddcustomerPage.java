@@ -1,20 +1,23 @@
 package com.nopcommerce.pageObjects;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class AddcustomerPage {
 
     public WebDriver driver;
-    WebElement listitem;
+    private WebElement listitem;
+    WebDriverWait wait;
 
     public AddcustomerPage(WebDriver driver) {
         this.driver = driver;
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
     By lnkCustomers_menu = By.xpath("//a[@href='#']//span[contains(text(),'Customers')]");
@@ -102,7 +105,8 @@ public class AddcustomerPage {
 
         driver.findElement(txtcustomerRoles).click();
 
-        Thread.sleep(3000);
+        //Thread.sleep(3000);
+        wait.until(d -> ((WebElement)(lstitemRegistered)).isDisplayed());
 
         if (role.equals("Registered")) {
             listitem = driver.findElement(lstitemRegistered);
@@ -139,13 +143,7 @@ public class AddcustomerPage {
     }
 
     public boolean verifyConfirmationMsg() {
-        String msg = driver.findElement(txtmsg).getText();
-        if (msg.contains("The new customer has been added successfully")) {
-            return true;
-        } else {
-            return false;
-        }
-
+        return driver.findElement(txtmsg).getText().contains("The new customer has been added successfully");
     }
 
 }
