@@ -1,7 +1,5 @@
 package com.nopcommerce.testBase;
 
-import com.nopcommerce.utilities.OptionsManager;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
@@ -9,17 +7,10 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.chromium.ChromiumDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 import java.io.File;
@@ -37,12 +28,20 @@ public class BaseClass {
     public ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     public Properties configPropObj;
     public Logger logger = LogManager.getLogger(this.getClass());
-    OptionsManager optionsManager = new OptionsManager();
-
+    BrowserOptionsManager browserOptionsManager = new BrowserOptionsManager();
+    CloudDesiredCapabilities cloudDesiredCapabilities = new CloudDesiredCapabilities();
+    String remoteURL = "http://localhost:4444/wd/hub";
+    BrowserFactory browserFactory;
+    String runmode;
 
     public WebDriver getDriver() {
         //Get driver from ThreadLocalMap
         return driver.get();
+    }
+
+    @BeforeTest
+    public void constructObject(){
+        browserFactory = new BrowserFactory();
     }
 
     @BeforeClass(alwaysRun = true)// Add alwaysRun=true
@@ -50,64 +49,49 @@ public class BaseClass {
     public void setup(String browser) throws IOException {
         //Load config.properties file
         configPropObj = new Properties();
-        FileInputStream configfile = new FileInputStream(System.getProperty("user.dir") + "\\resources\\config.properties");
+        FileInputStream configfile = new FileInputStream(System.getProperty("user.dir") + "/resources/config.properties");
         configPropObj.load(configfile);
+
+        runmode = configPropObj.getProperty("runmode");
         //end of loading config.properties file
-
-        if (browser.equalsIgnoreCase("chrome")) {
-            WebDriverManager.chromedriver().setup();
-            driver.set(new ChromeDriver(optionsManager.getChromeOptions()));
-        } else if (browser.equalsIgnoreCase("edge")) {
-            WebDriverManager.edgedriver().setup();
-            driver.set(new EdgeDriver(optionsManager.getEdgeOptions()));
-        } else if (browser.equalsIgnoreCase("firefox")) {
-            WebDriverManager.firefoxdriver().setup();
-            driver.set(new FirefoxDriver(optionsManager.getFirefoxOptions()));
-        } else if (browser.contains("remote")) {
-            if (browser.contains("chrome")) {
-                driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), optionsManager.getChromeOptions()));
-            } else if (browser.contains("firefox")) {
-                driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), optionsManager.getFirefoxOptions()));
-            } else if (browser.contains("edge")) {
-                driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), optionsManager.getEdgeOptions()));
+        if (runmode.equalsIgnoreCase("local")) {
+            switch (browser) {
+                case "chrome":
+                    driver.set(browserFactory.getDriver("chrome"));
+                    break;
+                case "firefox":
+                    driver.set(browserFactory.getDriver("firefox"));
+                    break;
+                case "edge":
+                    driver.set(browserFactory.getDriver("edge"));
+                    break;
             }
-        } else if (browser.contains("browserstack")) {
-            if (browser.contains("chrome")) {
-                DesiredCapabilities caps = new DesiredCapabilities();
-                caps.setCapability(ChromeOptions.CAPABILITY, optionsManager.getChromeOptions());
-                caps.setCapability("os", "Windows");
-                caps.setCapability("os_version", "10");
-                caps.setCapability("browser", "Chrome");
-                caps.setCapability("browser_version", "80");
-                caps.setCapability("name", "My First Test");
-                caps.setCapability("build", "Build #1");
-                caps.setCapability("project", "Sample sandbox project");
+        }
+         else if (runmode.equalsIgnoreCase("remote")) {
+            switch (browser) {
+                case "chrome":
+                    driver.set(new RemoteWebDriver(new URL(remoteURL), browserOptionsManager.getChromeOptions()));
+                    break;
+                case "firefox":
+                    driver.set(new RemoteWebDriver(new URL(remoteURL), browserOptionsManager.getFirefoxOptions()));
+                    break;
+                case "edge":
+                    driver.set(new RemoteWebDriver(new URL(remoteURL), browserOptionsManager.getEdgeOptions()));
+                    break;
+            }
+        }
+        else if (runmode.equalsIgnoreCase("browserstack")) {
 
-                driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), caps));
-            } else if (browser.contains("firefox")) {
-                DesiredCapabilities caps = new DesiredCapabilities();
-                caps.setCapability(ChromeOptions.CAPABILITY, optionsManager.getFirefoxOptions());
-                caps.setCapability("os", "Windows");
-                caps.setCapability("os_version", "10");
-                caps.setCapability("browser", "Firefox");
-                caps.setCapability("browser_version", "80");
-                caps.setCapability("name", "My First Test");
-                caps.setCapability("build", "Build #1");
-                caps.setCapability("project", "Sample sandbox project");
-
-                driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), caps));
-            } else if (browser.contains("edge")) {
-                DesiredCapabilities caps = new DesiredCapabilities();
-                caps.setCapability(ChromeOptions.CAPABILITY, optionsManager.getEdgeOptions());
-                caps.setCapability("os", "Windows");
-                caps.setCapability("os_version", "10");
-                caps.setCapability("browser", "Edge");
-                caps.setCapability("browser_version", "80");
-                caps.setCapability("name", "My First Test");
-                caps.setCapability("build", "Build #1");
-                caps.setCapability("project", "Sample sandbox project");
-
-                driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), caps));
+            switch (browser) {
+                case "chrome":
+                    driver.set(new RemoteWebDriver(new URL(remoteURL), cloudDesiredCapabilities.getChromeCapabilities()));
+                    break;
+                case "firefox":
+                    driver.set(new RemoteWebDriver(new URL(remoteURL), cloudDesiredCapabilities.getFirefoxCapabilities()));
+                    break;
+                case "edge":
+                    driver.set(new RemoteWebDriver(new URL(remoteURL), cloudDesiredCapabilities.getEdgeCapabilities()));
+                    break;
             }
         }
         getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -132,7 +116,7 @@ public class BaseClass {
     public String getScreenShotPath(String testCaseName, WebDriver driver) throws IOException {
         TakesScreenshot ts = (TakesScreenshot) driver;
         File source = ts.getScreenshotAs(OutputType.FILE);
-        String destinationFile = System.getProperty("user.dir") + "\\reports\\" + testCaseName + ".png";
+        String destinationFile = System.getProperty("user.dir") + "/reports/" + testCaseName + ".png";
         FileUtils.copyFile(source, new File(destinationFile));
         return destinationFile;
     }

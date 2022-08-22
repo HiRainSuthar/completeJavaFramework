@@ -62,3 +62,17 @@
 22:47:40.854 [TestNG-tests-1] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
 22:47:43.646 [TestNG-tests-2] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
 22:47:44.517 [TestNG-tests-3] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
+16:24:09.403 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - Driver invoked
+16:24:09.433 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - ********* starting TC_AddCustomerTest_003 *************
+16:28:10.579 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - Driver invoked
+16:28:10.594 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - ********* starting TC_AddCustomerTest_003 *************
+16:34:02.195 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - Driver invoked
+16:34:02.212 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - ********* starting TC_AddCustomerTest_003 *************
+16:38:35.046 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - Driver invoked
+16:38:35.093 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - ********* starting TC_AddCustomerTest_003 *************
+16:45:15.874 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - Driver invoked
+16:45:15.887 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - ********* starting TC_AddCustomerTest_003 *************
+16:45:31.545 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - *********Adding new customer *************
+16:59:06.260 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - Driver invoked
+16:59:06.285 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - ********* starting TC_AddCustomerTest_003 *************
+16:59:49.450 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - *********Adding new customer *************
