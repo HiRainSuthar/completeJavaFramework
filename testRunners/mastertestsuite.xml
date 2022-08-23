@@ -10,8 +10,11 @@
     </listeners>
 
     <test name="nopCommerceTests">
-        <packages>
+        <classes>
+            <class name="com.nopcommerce.testCases.TC_LoginDDT_002"></class>
+        </classes>
+<!--        <packages>
             <package name="com.nopcommerce.testCases"/>
-        </packages>
+        </packages>-->
     </test>
 </suite>

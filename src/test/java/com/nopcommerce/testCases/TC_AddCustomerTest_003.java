@@ -20,9 +20,9 @@ public class TC_AddCustomerTest_003 extends BaseClass{
 		logger.info("BaseURL is -------> "+ configReader.baseURL());
 		getDriver().get(configReader.baseURL());
 		LoginPage lp=new LoginPage(getDriver());
-		lp.setUserName(configReader.useremail());
+/*		lp.setUserName(configReader.useremail());
 		lp.setPassword(configReader.password());
-		lp.clickLogin();
+		lp.clickLogin();*/
 		Thread.sleep(3000);
 		
 		logger.info("*********Adding new customer *************");

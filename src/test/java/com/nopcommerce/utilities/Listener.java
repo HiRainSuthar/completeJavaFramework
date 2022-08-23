@@ -28,21 +28,18 @@ public class Listener extends BaseClass implements ITestListener {
 
     public void onTestFailure(ITestResult result) {
         //Screenshot
+        extentTest.get().log(Status.FAIL, "Test Failed");
         extentTest.get().fail(result.getThrowable());
-        WebDriver driver = null;
         String testMethodName = result.getMethod().getMethodName();
 
-        try {
+        /*try {
             driver = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
         } catch (Exception e) {
-
-        }
-        try {
-            extentTest.get().addScreenCaptureFromPath(getScreenShotPath(testMethodName, driver), result.getMethod().getMethodName());
-
-        } catch (IOException e) {
+            System.out.println(e.getMessage());
             e.printStackTrace();
-        }
+        }*/
+        //extentTest.get().addScreenCaptureFromPath(getScreenShotPath(testMethodName, (WebDriver) driver), result.getMethod().getMethodName());
+
     }
 
     public void onTestSkipped(ITestResult result) {
