@@ -6,7 +6,6 @@ import com.nopcommerce.utilities.XLUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -29,8 +28,9 @@ public class TC_LoginDDT_002 extends BaseClass {
 
 		String exp_title="Dashboard / nopCommerce administration";
 
-		if (loginPage.isWelcomeTextDisplayed()){
+		if (getDriver().getTitle().equals("Your store. Login")){
 			Assert.assertEquals(getDriver().getTitle(), "Your store. Login");
+			Assert.assertTrue(loginPage.getErrorText().contains("Login was unsuccessful"));
 			log.warn("***** login failed *****");
 		}
 		else {
@@ -38,37 +38,6 @@ public class TC_LoginDDT_002 extends BaseClass {
 			loginPage.clickLogout();
 			log.info("****** login test passed *****");
 		}
-/*		if(exp_title.equals(act_title))
-		{
-			if(exp.equals("Pass"))
-			{
-				log.info("****** login test passed *****");
-				loginPage.clickLogout();
-				//Thread.sleep(3000);
-				Assert.assertTrue(true);
-			}
-			else if(exp.equals("Fail"))
-			{
-				log.info("****** login test failed *****");
-				loginPage.clickLogout();
-				//Thread.sleep(3000);
-				Assert.assertTrue(false);
-			}
-			
-		else if(!exp_title.equals(act_title))
-			{
-				if(exp.equals("Pass"))
-				{
-					log.warn("***** login failed *****");
-					Assert.assertTrue(false);
-				}
-				else if(exp.equals("Fail"))
-				{
-					log.info("***** login passed *****");
-					Assert.assertTrue(true);
-				}
-			}
-		}*/
 		log.info("*******  Finished TC_LoginDDT_002 ********");
 	}
 	
