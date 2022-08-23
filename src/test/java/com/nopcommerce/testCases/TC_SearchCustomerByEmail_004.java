@@ -22,9 +22,9 @@ public class TC_SearchCustomerByEmail_004 extends BaseClass {
 		
 		getDriver().get(configReader.baseURL());
 		LoginPage lp=new LoginPage(getDriver());
-		lp.setUserName(configReader.useremail());
+/*		lp.setUserName(configReader.useremail());
 		lp.setPassword(configReader.password());
-		lp.clickLogin();
+		lp.clickLogin();*/
 		
 		//Go to search page
 		AddcustomerPage addcust=new AddcustomerPage(getDriver());

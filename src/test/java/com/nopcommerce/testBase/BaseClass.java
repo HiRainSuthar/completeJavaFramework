@@ -11,12 +11,14 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
+import java.time.Duration;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -47,11 +49,10 @@ public class BaseClass {
         browserOptionsManager = new BrowserOptionsManager();
         browserFactory = new BrowserFactory();
         cloudDesiredCapabilities = new CloudDesiredCapabilities();
-        //propertyReader = new PropertyReader();
         configReader = ConfigFactory.create(ConfigProperties.class);
     }
 
-    @BeforeClass(alwaysRun = true)// Add alwaysRun=true
+    @BeforeMethod(alwaysRun = true)// Add alwaysRun=true
     @Parameters("browser")
     public void setup(String browser) throws IOException {
         //Load config.properties file
@@ -99,15 +100,17 @@ public class BaseClass {
                     break;
             }
         }
-        getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         getDriver().manage().window().maximize();
         logger.info("Driver invoked");
     }
 
-    @AfterClass(alwaysRun = true)
+    @AfterMethod(alwaysRun = true)
     public void tearDown() {
         getDriver().close();
     }
+
+
 
 
 //    public void captureScreen(WebDriver driver, String tname) throws IOException {
@@ -118,11 +121,16 @@ public class BaseClass {
 //        logger.info("Screenshot taken");
 //    }
 
-    public String getScreenShotPath(String testCaseName, WebDriver driver) throws IOException {
+    public String getScreenShotPath(String testCaseName, WebDriver driver) {
         TakesScreenshot ts = (TakesScreenshot) driver;
         File source = ts.getScreenshotAs(OutputType.FILE);
         String destinationFile = System.getProperty("user.dir") + "/reports/" + testCaseName + ".png";
-        FileUtils.copyFile(source, new File(destinationFile));
+        try {
+            FileUtils.copyFile(source, new File(destinationFile));
+        } catch (IOException e) {
+            logger.error(e.getMessage(), e.getCause());
+            e.printStackTrace();
+        }
         return destinationFile;
     }
 
