@@ -10,12 +10,14 @@ import java.util.Properties;
 
 public class PropertyReader {
 
+    //This is not in use anymore as owner API implementation is available.
     Properties prop;
     String propertyFilePath = System.getProperty("user.dir") + "/resources/config.properties";
     FileInputStream configFile;
 
     protected Logger logger = LogManager.getLogger(this.getClass());
 
+    @Deprecated
     public String getPropertyValue(String key) {
         prop = new Properties();
 

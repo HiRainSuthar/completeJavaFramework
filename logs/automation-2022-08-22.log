@@ -76,15 +76,3 @@
 16:59:06.260 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - Driver invoked
 16:59:06.285 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - ********* starting TC_AddCustomerTest_003 *************
 16:59:49.450 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - *********Adding new customer *************
-11:01:26.562 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-11:01:26.573 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-11:01:45.626 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-11:01:50.163 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
-11:11:31.722 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-11:11:31.761 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-11:11:50.727 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-11:11:54.940 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
-11:14:07.650 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - Driver invoked
-11:14:07.664 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - ********* starting TC_AddCustomerTest_003 *************
-11:14:07.669 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - BaseURL is -------> http://admin-demo.nopcommerce.com
-11:14:45.106 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - *********Adding new customer *************

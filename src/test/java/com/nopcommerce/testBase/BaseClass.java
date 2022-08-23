@@ -1,6 +1,8 @@
 package com.nopcommerce.testBase;
 
+import com.nopcommerce.utilities.ConfigProperties;
 import com.nopcommerce.utilities.PropertyReader;
+import org.aeonbits.owner.ConfigFactory;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
@@ -32,7 +34,8 @@ public class BaseClass {
     String remoteURL = "http://localhost:4444/wd/hub";
     BrowserFactory browserFactory;
     String runmode;
-    PropertyReader propertyReader;
+    //PropertyReader propertyReader;
+    protected ConfigProperties configReader;
 
     public WebDriver getDriver() {
         //Get driver from ThreadLocalMap
@@ -44,7 +47,8 @@ public class BaseClass {
         browserOptionsManager = new BrowserOptionsManager();
         browserFactory = new BrowserFactory();
         cloudDesiredCapabilities = new CloudDesiredCapabilities();
-        propertyReader = new PropertyReader();
+        //propertyReader = new PropertyReader();
+        configReader = ConfigFactory.create(ConfigProperties.class);
     }
 
     @BeforeClass(alwaysRun = true)// Add alwaysRun=true
@@ -52,7 +56,8 @@ public class BaseClass {
     public void setup(String browser) throws IOException {
         //Load config.properties file
 
-        runmode = propertyReader.getPropertyValue("runmode");
+        System.out.println("runmode is ---------------------------------------> "+configReader.runmode());
+        runmode = configReader.runmode();
         //end of loading config.properties file
         if (runmode.equalsIgnoreCase("local")) {
             switch (browser) {

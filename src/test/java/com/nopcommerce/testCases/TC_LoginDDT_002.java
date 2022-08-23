@@ -3,7 +3,9 @@ package com.nopcommerce.testCases;
 import java.io.IOException;
 import java.time.Duration;
 
+import com.nopcommerce.utilities.ConfigProperties;
 import com.nopcommerce.utilities.PropertyReader;
+import org.aeonbits.owner.ConfigFactory;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Before;
@@ -21,12 +23,10 @@ import com.nopcommerce.utilities.XLUtils;
 public class TC_LoginDDT_002 extends BaseClass
 {
 
-	PropertyReader propertyReader;
 	WebDriverWait webDriverWait;
 
 	@BeforeClass
 	public void constructObj(){
-		propertyReader = new PropertyReader();
 		webDriverWait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
 	}
 
@@ -38,7 +38,7 @@ public class TC_LoginDDT_002 extends BaseClass
 		log.info("*******   Starting TC_LoginDDT_002 *******");
 
 
-		getDriver().get(propertyReader.getPropertyValue("baseURL"));
+		getDriver().get(configReader.baseURL());
 		
 		LoginPage lp=new LoginPage(getDriver());
 		
