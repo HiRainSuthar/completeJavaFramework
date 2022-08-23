@@ -258,3 +258,144 @@
 15:36:42.492 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
 15:37:00.588 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - ****** login test passed *****
 15:37:00.589 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
+16:42:59.273 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+16:42:59.298 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+16:43:03.888 [main] WARN  com.nopcommerce.testCases.TC_LoginDDT_002 - ***** login failed *****
+16:43:03.888 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
+16:43:05.300 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+16:43:05.317 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+16:43:08.211 [main] WARN  com.nopcommerce.testCases.TC_LoginDDT_002 - ***** login failed *****
+16:43:08.211 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
+16:43:09.620 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+16:43:09.624 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+16:43:13.491 [main] WARN  com.nopcommerce.testCases.TC_LoginDDT_002 - ***** login failed *****
+16:43:13.491 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
+16:43:14.951 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+16:43:14.952 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+16:43:23.411 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - ****** login test passed *****
+16:43:23.411 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
+17:10:55.011 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:10:55.027 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:10:58.300 [main] WARN  com.nopcommerce.testCases.TC_LoginDDT_002 - ***** login failed *****
+17:10:58.300 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
+17:10:59.748 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:10:59.767 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:11:03.943 [main] WARN  com.nopcommerce.testCases.TC_LoginDDT_002 - ***** login failed *****
+17:11:03.943 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
+17:11:05.403 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:11:05.421 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:11:08.580 [main] WARN  com.nopcommerce.testCases.TC_LoginDDT_002 - ***** login failed *****
+17:11:08.580 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
+17:11:10.051 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:11:10.060 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:12:24.519 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:12:24.529 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:13:04.336 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:13:05.900 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:13:07.429 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:13:17.619 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:13:17.633 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:13:40.493 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:13:40.508 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:13:46.122 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:13:46.140 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:14:30.158 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:14:30.171 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:15:30.345 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:15:30.365 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:15:36.464 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:15:36.466 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:15:40.855 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:15:40.868 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:15:45.222 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:15:45.236 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:17:16.851 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:17:16.873 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:19:02.586 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:19:02.591 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:19:06.848 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:19:06.865 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:19:10.191 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:19:10.199 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:22:38.292 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:22:38.319 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:22:51.524 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:22:51.528 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:23:05.648 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:23:05.653 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:23:18.722 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:23:18.729 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:23:26.048 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - ****** login test passed *****
+17:23:26.048 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
+17:29:07.625 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:29:07.635 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:29:11.008 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:29:11.024 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:29:14.147 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:29:14.153 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:29:17.238 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:29:17.254 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:29:24.772 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - ****** login test passed *****
+17:29:24.772 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
+17:30:13.312 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:30:13.327 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:30:48.789 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:30:48.800 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:34:07.396 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:34:07.415 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:34:22.410 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:34:22.418 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:34:36.577 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:34:36.584 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:34:49.747 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:34:49.760 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:36:36.054 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:36:36.075 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:36:38.787 [main] WARN  com.nopcommerce.testCases.TC_LoginDDT_002 - ***** login failed *****
+17:36:38.787 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
+17:36:40.324 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:36:40.337 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:36:42.881 [main] WARN  com.nopcommerce.testCases.TC_LoginDDT_002 - ***** login failed *****
+17:36:42.882 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
+17:36:44.343 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:36:44.351 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:36:46.878 [main] WARN  com.nopcommerce.testCases.TC_LoginDDT_002 - ***** login failed *****
+17:36:46.878 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
+17:36:48.475 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:36:48.489 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:37:54.051 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:37:54.067 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:37:57.299 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:37:57.319 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:38:00.290 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:38:00.294 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:38:03.364 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:38:03.379 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:38:28.822 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - ****** login test passed *****
+17:38:28.822 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
+17:39:26.707 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:39:26.714 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:39:31.001 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:39:31.019 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:39:34.076 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:39:34.081 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:39:38.419 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:39:38.433 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:39:44.717 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - ****** login test passed *****
+17:39:44.717 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
+17:42:32.102 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:42:32.123 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:42:34.921 [main] WARN  com.nopcommerce.testCases.TC_LoginDDT_002 - ***** login failed *****
+17:42:34.921 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
+17:42:36.380 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:42:36.393 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:42:37.933 [main] WARN  com.nopcommerce.testCases.TC_LoginDDT_002 - ***** login failed *****
+17:42:37.946 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
+17:42:39.396 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:42:39.410 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:42:42.004 [main] WARN  com.nopcommerce.testCases.TC_LoginDDT_002 - ***** login failed *****
+17:42:42.004 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
+17:42:43.470 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
+17:42:43.489 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
+17:42:50.561 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - ****** login test passed *****
+17:42:50.561 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********

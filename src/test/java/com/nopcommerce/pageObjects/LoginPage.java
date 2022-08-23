@@ -1,24 +1,24 @@
 package com.nopcommerce.pageObjects;
 
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+
 public class LoginPage {
 
-    WebDriverWait webDriverWait;
-    WebDriver driver;
+    public WebDriverWait webDriverWait;
 
     public LoginPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
-        webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(30));
     }
 
     @FindBy(id = "Email")
@@ -37,9 +37,6 @@ public class LoginPage {
     @CacheLookup
     WebElement logoutBtn;
 
-    @FindBy(xpath = "//strong")
-    private WebElement welcomeTxt;
-
     public void login(String userEmail, String userPassword){
         emailTxtbox.clear();
         emailTxtbox.sendKeys(userEmail);
@@ -52,15 +49,8 @@ public class LoginPage {
         logoutBtn.click();
     }
 
-    public boolean isWelcomeTextDisplayed(){
-        boolean isWelcomeTextDisplayed = false;
-        try {
-            isWelcomeTextDisplayed= welcomeTxt.isDisplayed();
-        }
-        catch (NoSuchElementException e){
-            isWelcomeTextDisplayed = true;
-            System.out.println(e.getMessage());
-        }
-        return isWelcomeTextDisplayed;
+    public String getErrorText(){
+        WebElement error = webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.className("message-error")));
+        return error.getText();
     }
 }
