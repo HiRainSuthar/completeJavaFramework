@@ -15,25 +15,13 @@ public class TC_LoginTest_001 extends BaseClass {
 
     @Test(groups = {"sanity", "regression", "master"})
     public void loginTest()  {
-        log.info("*******  Starting TC_LoginTest_001 ***** ");
-
         getDriver().get(configReader.baseURL());
         loginPage= new LoginPage(getDriver());
 
         log.info("******* Providing login details ***** ");
-/*        lp.setUserName(configReader.useremail());
-        lp.setPassword(configReader.password());
-        lp.clickLogin();*/
         loginPage.login(configReader.useremail(), configReader.password());
         Assert.assertEquals(getDriver().getTitle(), exp_title, "Page title validation failed");
-//        if (exp_title.equals(act_title)) {
-//            logger.info("******* Login passed ***** ");
-//            Assert.assertTrue(true);
-//        } else {
-//            logger.error("******* Login failed ***** ");
-//            captureScreen(getDriver(), "loginTest");
-//            Assert.assertTrue(false);
-//        }
+
         log.info("*******  Finished TC_LoginTest_001 ***** ");
     }
 }

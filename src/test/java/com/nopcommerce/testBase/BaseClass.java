@@ -1,9 +1,9 @@
 package com.nopcommerce.testBase;
 
 import com.nopcommerce.utilities.ConfigProperties;
-import com.nopcommerce.utilities.PropertyReader;
 import org.aeonbits.owner.ConfigFactory;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -11,7 +11,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
 import java.io.File;
@@ -19,8 +18,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.time.Duration;
-import java.util.Properties;
-import java.util.concurrent.TimeUnit;
+import java.util.Base64;
 
 public class BaseClass {
 
@@ -52,12 +50,10 @@ public class BaseClass {
         configReader = ConfigFactory.create(ConfigProperties.class);
     }
 
-    @BeforeMethod(alwaysRun = true)// Add alwaysRun=true
+    @BeforeClass(alwaysRun = true)// Add alwaysRun=true
     @Parameters("browser")
     public void setup(String browser) throws IOException {
-        //Load config.properties file
 
-        System.out.println("runmode is ---------------------------------------> "+configReader.runmode());
         runmode = configReader.runmode();
         //end of loading config.properties file
         if (runmode.equalsIgnoreCase("local")) {
@@ -105,12 +101,10 @@ public class BaseClass {
         logger.info("Driver invoked");
     }
 
-    @AfterMethod(alwaysRun = true)
+    @AfterTest(alwaysRun = true)
     public void tearDown() {
         getDriver().close();
     }
-
-
 
 
 //    public void captureScreen(WebDriver driver, String tname) throws IOException {
@@ -124,7 +118,7 @@ public class BaseClass {
     public String getScreenShotPath(String testCaseName, WebDriver driver) {
         TakesScreenshot ts = (TakesScreenshot) driver;
         File source = ts.getScreenshotAs(OutputType.FILE);
-        String destinationFile = System.getProperty("user.dir") + "/reports/" + testCaseName + ".png";
+        String destinationFile = System.getProperty("user.dir") + "/screenshots/" + testCaseName + ".png";
         try {
             FileUtils.copyFile(source, new File(destinationFile));
         } catch (IOException e) {
@@ -142,5 +136,9 @@ public class BaseClass {
     public int randomeNum() {
         String generatedString2 = RandomStringUtils.randomNumeric(4);
         return (Integer.parseInt(generatedString2));
+    }
+
+    public String getScreenshotAsBase64(WebDriver driver) throws IOException {
+        return  ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
     }
 }
