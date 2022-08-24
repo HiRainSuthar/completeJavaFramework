@@ -1,7 +1,5 @@
 package com.nopcommerce.utilities;
 
-//Extent report 5.x
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -28,7 +26,7 @@ public class ExtentReportManager implements ITestListener
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
 		repName="Test-Report-"+timeStamp+".html";
 				
-		sparkReporter=new ExtentSparkReporter(".\\reports\\"+repName);//specify location of the report
+		sparkReporter=new ExtentSparkReporter(System.getProperty("user.dir")+ "/reports/"+repName);//specify location of the report
 				
 		sparkReporter.config().setDocumentTitle("nopCommerce Automation Report"); // Tile of report
 		sparkReporter.config().setReportName("nopCommerce  Functional Testing"); // name of the report
@@ -68,7 +66,7 @@ public class ExtentReportManager implements ITestListener
 		test.log(Status.FAIL, "Test Failed");
 		test.log(Status.FAIL, result.getThrowable().getMessage());
 			
-		String screenshotPath=System.getProperty("user.dir")+"\\screenshots\\"+result.getName()+".png";
+		String screenshotPath=System.getProperty("user.dir")+"/screenshots/"+result.getName()+".png";
 		test.addScreenCaptureFromPath(screenshotPath);// adding screen shot	 
 	}
 	
@@ -111,9 +109,5 @@ public class ExtentReportManager implements ITestListener
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 		// TODO Auto-generated method stub
-		
 	}
-
-	
-	
 }

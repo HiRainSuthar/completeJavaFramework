@@ -33,9 +33,11 @@ public class LoginPage {
     @CacheLookup
     WebElement loginBtn;
 
-    @FindBy(xpath = "//a[contains(normalize-space(),'Logout')]")
+    @FindBy(css = "#navbarText ul li:nth-child(3) a") //updated from xpath = "//a[contains(normalize-space(),'Logout')]
     @CacheLookup
     WebElement logoutBtn;
+
+    private By errorText = By.className("message-error");
 
     public void login(String userEmail, String userPassword){
         emailTxtbox.clear();
@@ -50,7 +52,7 @@ public class LoginPage {
     }
 
     public String getErrorText(){
-        WebElement error = webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.className("message-error")));
+        WebElement error = webDriverWait.until(ExpectedConditions.presenceOfElementLocated(errorText));
         return error.getText();
     }
 }

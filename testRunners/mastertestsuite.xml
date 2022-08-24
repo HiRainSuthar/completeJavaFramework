@@ -4,12 +4,15 @@
 <suite name="nopCommerce Master Suite" thread-count="5">
     <parameter name="browser" value="chrome"/>
     <listeners>
-        <listener class-name="com.nopcommerce.utilities.Listener"></listener>
+        <listener class-name="com.nopcommerce.utilities.Listener"/>
     </listeners>
 
     <test name="nopCommerceTests">
-        <packages>
+        <classes>
+            <class name="com.nopcommerce.testCases.TC_LoginDDT_002"/>
+        </classes>
+<!--        <packages>
             <package name="com.nopcommerce.testCases"/>
-        </packages>
+        </packages>-->
     </test>
 </suite>
