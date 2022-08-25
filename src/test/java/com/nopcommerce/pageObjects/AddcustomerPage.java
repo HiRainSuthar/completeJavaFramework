@@ -20,10 +20,11 @@ public class AddcustomerPage {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    By lnkCustomers_menu = By.xpath("//a[@href='#']//span[contains(text(),'Customers')]");
-    By lnkCustomers_menuitem = By.xpath("//span[@class='menu-item-title'][contains(text(),'Customers')]");
+    By lnkCustomers_menu = By.xpath("//a[@href='#']//p[contains(text(),'Customers')]"); //changed from "//a[@href='#']//span[contains(text(),'Customers')]"
+    //By lnkCustomers_menuitem = By.xpath("//span[@class='menu-item-title'][contains(text(),'Customers')]");
+    By lnkCustomers_menuitem = By.xpath("//nav/ul/li[4]/ul/li[1]/a");
 
-    By btnAddnew = By.xpath("//a[@class='btn bg-blue']"); //Add new
+    By btnAddnew = By.xpath("//a[@class='btn btn-primary']"); //Add new updated from "//a[@class='btn bg-blue']"
 
     By txtEmail = By.xpath("//input[@id='Email']");
     By txtPassword = By.xpath("//input[@id='Password']");
@@ -105,8 +106,8 @@ public class AddcustomerPage {
 
         driver.findElement(txtcustomerRoles).click();
 
-        //Thread.sleep(3000);
-        wait.until(d -> ((WebElement)(lstitemRegistered)).isDisplayed());
+        Thread.sleep(3000);
+
 
         if (role.equals("Registered")) {
             listitem = driver.findElement(lstitemRegistered);

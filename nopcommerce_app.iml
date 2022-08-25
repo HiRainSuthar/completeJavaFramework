@@ -126,5 +126,9 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.slf4j:slf4j-simple:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.aeonbits.owner:owner-java8:1.0.6" level="project" />
     <orderEntry type="library" name="Maven: org.aeonbits.owner:owner:1.0.6" level="project" />
+    <orderEntry type="library" name="Maven: com.github.javafaker:javafaker:1.0.2" level="project" />
+    <orderEntry type="library" name="Maven: org.yaml:snakeyaml:android:1.23" level="project" />
+    <orderEntry type="library" name="Maven: com.github.mifmif:generex:1.0.2" level="project" />
+    <orderEntry type="library" name="Maven: dk.brics.automaton:automaton:1.11-8" level="project" />
   </component>
 </module>

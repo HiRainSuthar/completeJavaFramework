@@ -1,130 +1,37 @@
-10:27:55.286 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-10:27:55.296 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-10:27:57.314 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-10:28:01.847 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
-10:29:56.581 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-10:29:56.585 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-10:29:58.636 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-10:30:03.432 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
-10:31:19.448 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-10:31:19.464 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-10:31:21.393 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-10:33:00.054 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-10:33:00.060 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-10:33:01.888 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-10:37:11.775 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-10:37:11.788 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-10:37:13.885 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-10:39:20.811 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-10:39:20.833 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-10:39:22.700 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-10:48:00.642 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-10:48:00.653 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-10:48:17.916 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-10:49:23.458 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-10:49:23.476 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-10:49:25.746 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-10:56:29.013 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-10:56:29.024 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-10:56:31.136 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-10:57:18.347 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-10:57:18.360 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-10:57:19.265 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-11:09:26.059 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-11:09:26.073 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-11:09:28.059 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-11:10:43.298 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-11:10:43.304 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-11:10:45.279 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-11:13:06.500 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-11:13:06.515 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-11:13:08.513 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-11:15:34.094 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-11:15:34.100 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-11:15:51.807 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-11:18:50.310 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-11:18:50.333 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-11:18:52.244 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-11:29:31.328 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-11:29:31.336 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-11:29:32.250 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-11:34:24.852 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-11:34:24.871 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-11:34:26.912 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-11:36:02.921 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-11:36:02.946 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-11:36:04.725 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-11:37:51.398 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-11:37:51.412 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-11:38:08.735 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-11:39:08.342 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-11:39:08.352 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-11:39:10.101 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-11:40:35.906 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-11:40:35.916 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-11:40:37.891 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-11:43:21.726 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-11:43:21.750 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-11:43:23.745 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-11:51:12.814 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-11:51:12.820 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-11:51:13.830 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-11:56:54.547 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-11:56:54.567 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-11:56:56.621 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-12:02:30.738 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-12:02:30.758 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-12:03:03.555 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-12:06:28.951 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-12:06:28.976 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-12:06:46.035 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-12:08:11.934 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-12:08:11.950 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-12:08:13.794 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-12:11:18.143 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-12:11:18.159 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-12:11:36.219 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-12:12:39.012 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-12:12:39.037 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-12:12:56.446 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-12:20:43.956 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-12:20:43.970 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-12:20:46.486 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-15:27:18.236 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-15:27:18.248 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-15:27:20.358 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-15:28:51.235 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-15:28:51.256 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-15:28:52.183 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-15:37:43.544 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-15:37:43.563 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Starting TC_LoginTest_001 ***** 
-15:37:46.070 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-15:40:19.442 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-15:40:21.477 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-15:42:54.935 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - Driver invoked
-15:42:56.943 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - ******* Providing login details ***** 
-15:43:01.368 [main] INFO  com.nopcommerce.testCases.TC_LoginTest_001 - *******  Finished TC_LoginTest_001 ***** 
-15:46:21.910 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
-15:46:22.625 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
-15:46:41.653 [main] WARN  com.nopcommerce.testCases.TC_LoginDDT_002 - ***** login failed *****
-15:46:41.653 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
-15:46:41.661 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
-15:46:42.929 [main] WARN  com.nopcommerce.testCases.TC_LoginDDT_002 - ***** login failed *****
-15:46:42.929 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
-15:46:42.930 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
-15:46:44.078 [main] WARN  com.nopcommerce.testCases.TC_LoginDDT_002 - ***** login failed *****
-15:46:44.079 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
-15:46:44.079 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
-15:51:31.289 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - Driver invoked
-15:51:31.879 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
-15:51:34.637 [main] WARN  com.nopcommerce.testCases.TC_LoginDDT_002 - ***** login failed *****
-15:51:34.637 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
-15:51:34.643 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
-15:51:36.058 [main] WARN  com.nopcommerce.testCases.TC_LoginDDT_002 - ***** login failed *****
-15:51:36.077 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
-15:51:36.079 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
-15:51:37.495 [main] WARN  com.nopcommerce.testCases.TC_LoginDDT_002 - ***** login failed *****
-15:51:37.495 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
-15:51:37.496 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******   Starting TC_LoginDDT_002 *******
-15:51:44.450 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - ****** login test passed *****
-15:51:44.450 [main] INFO  com.nopcommerce.testCases.TC_LoginDDT_002 - *******  Finished TC_LoginDDT_002 ********
+11:08:34.383 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - Driver invoked
+11:08:34.399 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - ********* starting TC_AddCustomerTest_003 *************
+11:08:34.400 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - BaseURL is -------> https://admin-demo.nopcommerce.com/login
+11:08:39.362 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - *********Adding new customer *************
+11:09:14.903 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - Driver invoked
+11:09:14.919 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - ********* starting TC_AddCustomerTest_003 *************
+11:09:14.919 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - BaseURL is -------> https://admin-demo.nopcommerce.com/login
+11:09:19.793 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - *********Adding new customer *************
+11:10:05.066 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - Driver invoked
+11:10:05.080 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - ********* starting TC_AddCustomerTest_003 *************
+11:10:05.081 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - BaseURL is -------> https://admin-demo.nopcommerce.com/login
+11:10:14.809 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - *********Adding new customer *************
+11:12:07.895 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - Driver invoked
+11:12:07.912 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - ********* starting TC_AddCustomerTest_003 *************
+11:12:07.912 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - BaseURL is -------> https://admin-demo.nopcommerce.com/login
+11:12:19.477 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - *********Adding new customer *************
+11:24:22.625 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - Driver invoked
+11:24:22.646 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - ********* starting TC_AddCustomerTest_003 *************
+11:24:22.655 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - BaseURL is -------> https://admin-demo.nopcommerce.com/login
+11:24:49.164 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - *********Adding new customer *************
+11:27:04.355 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - Driver invoked
+11:27:04.369 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - ********* starting TC_AddCustomerTest_003 *************
+11:27:04.381 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - BaseURL is -------> https://admin-demo.nopcommerce.com/login
+11:27:13.177 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - *********Adding new customer *************
+11:32:15.588 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - Driver invoked
+11:32:15.600 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - ********* starting TC_AddCustomerTest_003 *************
+11:32:15.601 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - BaseURL is -------> https://admin-demo.nopcommerce.com/login
+11:32:25.579 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - *********Adding new customer *************
+11:38:23.331 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - Driver invoked
+11:38:23.350 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - ********* starting TC_AddCustomerTest_003 *************
+11:38:23.351 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - BaseURL is -------> https://admin-demo.nopcommerce.com/login
+11:38:33.042 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - *********Adding new customer *************
+11:42:15.411 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - Driver invoked
+11:42:15.435 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - ********* starting TC_AddCustomerTest_003 *************
+11:42:15.441 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - BaseURL is -------> https://admin-demo.nopcommerce.com/login
+11:42:25.336 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - *********Adding new customer *************
+11:42:31.219 [main] INFO  com.nopcommerce.testCases.TC_AddCustomerTest_003 - ***************  Providing customer details  *********** 
