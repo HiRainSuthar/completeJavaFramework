@@ -9,7 +9,7 @@
 
     <test name="nopCommerceTests">
         <classes>
-            <class name="com.nopcommerce.testCases.TC_LoginDDT_002"/>
+            <class name="com.nopcommerce.testCases.TC_AddCustomerTest_003"/>
         </classes>
 <!--        <packages>
             <package name="com.nopcommerce.testCases"/>
